@@ -11,10 +11,10 @@ import java.util.Set;
  * created on 2020/2/13
  */
 public interface QuestionMapper {
-    @Insert("insert into t_question(id, title, url, answer_num)"
+    @Insert("insert into t_zhihu_question(id, title, url, answer_num)"
             + "values(#{id}, #{title}, #{url}, #{answerNum})")
     int insert(Question question);
 
-    @Select("select id from t_question")
+    @Select("select id from t_zhihu_question")
     Set<Long> selectAllIds();
 }

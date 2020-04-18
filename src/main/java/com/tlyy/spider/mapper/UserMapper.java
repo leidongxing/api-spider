@@ -11,10 +11,10 @@ import java.util.Set;
  * created on 2020/2/13
  */
 public interface UserMapper {
-    @Insert("insert into t_user(id, name, head_line, gender, url)"
+    @Insert("insert into t_zhihu_user(id, name, head_line, gender, url)"
             + "values(#{id}, #{name}, #{headLine}, #{gender}, #{url})")
     int insert(User user);
 
-    @Select("select id from t_user")
+    @Select("select id from t_zhihu_user")
     Set<String> selectAllIds();
 }

@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for t_answer
 -- ----------------------------
-DROP TABLE IF EXISTS `t_answer`;
+DROP TABLE IF EXISTS `t_zhihu_answer`;
 CREATE TABLE `t_answer`  (
   `id` bigint(20) NOT NULL,
   `question_id` bigint(20) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE `t_answer`  (
 -- ----------------------------
 -- Table structure for t_question
 -- ----------------------------
-DROP TABLE IF EXISTS `t_question`;
+DROP TABLE IF EXISTS `t_zhihu_question`;
 CREATE TABLE `t_question`  (
   `id` bigint(20) NOT NULL,
   `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE `t_question`  (
 -- ----------------------------
 -- Table structure for t_user
 -- ----------------------------
-DROP TABLE IF EXISTS `t_user`;
+DROP TABLE IF EXISTS `t_zhihu_user`;
 CREATE TABLE `t_user`  (
   `id` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
